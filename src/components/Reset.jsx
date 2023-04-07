@@ -19,7 +19,7 @@ const Reset = () => {
         <Grid align="center">
             <Avatar style={avatarStyle}> <LockResetOutlinedIcon sx={{marginRight: .5 , height: "45px", width: "50px" }} /> </Avatar>
             <Typography fontFamily={"Roboto"} variant='h5'
-                padding={1} marginBottom="10" textAlign='center' color={"#4C4C4C"}>Reset Password?</Typography>
+                padding={1} marginBottom="10" textAlign='center' color={"#4C4C4C"}>Reset Password</Typography>
         </Grid>
 
         <TextField margin="normal" label='Enter new password' type="password" fullWidth required />

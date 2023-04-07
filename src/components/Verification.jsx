@@ -5,13 +5,14 @@ import DomainVerificationOutlinedIcon from '@mui/icons-material/DomainVerificati
 
 
 const Verification = () => {
-  const paperStyle = { padding: 40, height: '35vh', width: 350, margin: "120px auto", borderRadius: 10 }
+  const paperStyle = { padding: 40, height: '38vh', width: 350, margin: "120px auto", borderRadius: 10 }
   const avatarStyle = { backgroundColor: '#1bbd7e', height: "60px", width: "60px" }
   const btnstyle = { margin: '8px 0' }
   const navigate = useNavigate();
   const navigateToReset = () => {
     navigate("/Reset");
   }
+  
 
   return (
     <Grid >
@@ -27,9 +28,9 @@ const Verification = () => {
             padding={1} marginBottom="10" textAlign='center' color={"#4C4C4C"}>Email Verification</Typography>
         </Grid>
 
-        <Typography align='center' color={"#AEAEAE"}> Enter OTP send to your Email </Typography>
+        <Typography marginBottom={"10px"} marginTop={"10px"} align='center' color={"#AEAEAE"}> We've sent a code to your email </Typography>
 
-        <TextField margin="normal" label='Enter 6 digit OTP' type="text" fullWidth required />
+        <TextField margin='normal' label='Enter 6 digit code' type="text" fullWidth required />
 
         <Button onClick={navigateToReset} endIcon={<LoginOutlinedIcon />} type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Submit</Button>
 
