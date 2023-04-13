@@ -4,7 +4,7 @@ import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
 import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
 
 const Reset = () => {
-    const paperStyle = { padding: 40, height: '43vh', width: 350, margin: "120px auto", borderRadius: 10 }
+    const paperStyle = { padding: 20, height: '350px', width: '280px', margin: "90px auto", borderRadius: 10 }
     const avatarStyle = { backgroundColor: '#1bbd7e', height: "60px", width: "60px" }
     const btnstyle = { margin: '8px 0' }
 

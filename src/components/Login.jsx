@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormControlLabel, Checkbox, Grid, Paper, TextField, Typography, Button, Avatar } from '@mui/material'
+import { FormControlLabel, Checkbox, Grid, Paper, TextField, Typography, Button, Avatar} from '@mui/material'
 import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
@@ -7,12 +7,13 @@ import { Link } from "react-router-dom";
 
 
 const login = () => {
-  const paperStyle = { padding: 32, height: '55vh', width: 350, margin: "120px auto", borderRadius: 10 }
+  const paperStyle = { padding: 20, height: '440px', width: "280px", margin: "90px auto", borderRadius: 10 }
   const avatarStyle = { backgroundColor: '#1bbd7e', height: "60px", width: "60px" }
   const btnstyle = { margin: '8px 0' }
+  // const theme = useTheme();
+  // const match = useMediaQuery(theme.breakpoints.down('md'))
   return (
-    <Grid >
-    
+    <Grid align="left">
       <Paper elevation={10} style={paperStyle} boxShadow={"5px 5px 10px #ccc"} sx={{
         ":hover": {
           boxShadow: '10px 10px 20px #ccc'

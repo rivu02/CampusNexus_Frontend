@@ -5,7 +5,7 @@ import DomainVerificationOutlinedIcon from '@mui/icons-material/DomainVerificati
 
 
 const Verification = () => {
-  const paperStyle = { padding: 40, height: '38vh', width: 350, margin: "120px auto", borderRadius: 10 }
+  const paperStyle = { padding: 20, height: '300px', width: "280px", margin: "90px auto", borderRadius: 10 }
   const avatarStyle = { backgroundColor: '#1bbd7e', height: "60px", width: "60px" }
   const btnstyle = { margin: '8px 0' }
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const Verification = () => {
             padding={1} marginBottom="10" textAlign='center' color={"#4C4C4C"}>Email Verification</Typography>
         </Grid>
 
-        <Typography marginBottom={"10px"} marginTop={"10px"} align='center' color={"#AEAEAE"}> We've sent a code to your email </Typography>
+        <Typography marginBottom={"5px"} marginTop={"5px"} align='center' color={"#AEAEAE"}> We've sent a code to your email </Typography>
 
         <TextField margin='normal' label='Enter 6 digit code' type="text" fullWidth required />
 
