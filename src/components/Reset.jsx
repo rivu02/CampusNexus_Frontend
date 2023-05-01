@@ -1,12 +1,16 @@
 import { Grid, Paper, TextField, Typography, Button, Avatar } from '@mui/material'
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
 import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
 
 const Reset = () => {
-    const paperStyle = { padding: 20, height: '350px', width: '280px', margin: "90px auto", borderRadius: 10 }
+    const paperStyle = { padding: 40, height: '350px', width: '280px', margin: "90px auto", borderRadius: 10 }
     const avatarStyle = { backgroundColor: '#1bbd7e', height: "60px", width: "60px" }
     const btnstyle = { margin: '8px 0' }
+    const navigate = useNavigate();
+    const navigateToLogin = () => {
+        navigate("/login");
+    }
 
   return (
     <Grid >
@@ -27,8 +31,8 @@ const Reset = () => {
 
         <Button endIcon={<LoginOutlinedIcon />} type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Submit</Button>
 
-        <Typography >
-            <Link to={"/"} > Back to Login Page </Link>
+        <Typography onClick={navigateToLogin}>
+            <Link> Back to Login Page </Link>
         </Typography>
 
     </Paper>

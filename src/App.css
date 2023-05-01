@@ -1,10 +1,22 @@
-/* .bg{
-    background-color: white;
-    margin-left: 40%;
-    margin-right: 35%;
-
+body{
+   background-color: "#f0f4fc";
 }
-.bg2{
-    background-image: url("./images/bg1.jpg");
-      background-size: cover;
-} */
+
+.nav-logo{
+width: 15rem;
+margin: 10px;
+}
+
+.body-logo{
+margin-left: auto;
+margin-right: auto;
+height: 10rem;
+width: 10rem;
+margin-bottom: 1rem;
+}
+
+.stud-info{
+   margin-top: 30px;
+   margin-left: 40px;
+   margin-right: 40px;
+}

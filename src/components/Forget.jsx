@@ -5,14 +5,18 @@ import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
 
 
 const Forget = () => {
-    const paperStyle = { padding: 20, height: '300px', width: "280px", margin: "90px auto", borderRadius: 10 }
+    const paperStyle = { padding: 40, height: '300px', width: "280px", margin: "90px auto", borderRadius: 10 }
     const avatarStyle = { backgroundColor: '#1bbd7e', height: "60px", width: "60px" }
     const btnstyle = { margin: '8px 0' }
     const navigate = useNavigate();
 
-    const navigateToVerification = ()=>{
-    navigate("/Verification");
+    const navigateToVerification = () => {
+        navigate("/verification");
     }
+    const navigateToLogin = () => {
+        navigate("/login");
+    }
+
     return (
         <Grid >
 
@@ -36,8 +40,8 @@ const Forget = () => {
                     Submit
                 </Button>
 
-                <Typography >
-                    <Link to={"/"} > Back to Login Page </Link>
+                <Typography onClick={navigateToLogin}>
+                    <Link > Back to Login Page </Link>
                 </Typography>
 
             </Paper>
