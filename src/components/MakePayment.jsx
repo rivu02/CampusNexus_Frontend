@@ -1,32 +1,19 @@
 import { useState } from "react";
-import AppBar from '@mui/material/AppBar';
-import { Grid, Paper, Typography, Button, Box, FormHelperText } from '@mui/material'
-import Toolbar from '@mui/material/Toolbar';
+import { Grid, Paper, Typography, Button, Box, FormHelperText } from '@mui/material';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
-import { Form, Link, useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import Stack from '@mui/joy/Stack';
-import logo2 from '../images/cnlogo.png';
-import logo1 from '../images/mckvlogo2.png'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import AppBar from './appBar';
 // import img1 from './images/logo.jpg';
-
-const appBarTheme = createTheme({
-  palette: {
-    appbarColor: {
-      main: '#182c5c',
-      contrastText: '#fff',
-    },
-  },
-});
 
 const ColoredLine = () => (
   <div sx={{ marginTop: "10px", marginBottom: "10px" }}>
@@ -83,23 +70,13 @@ const MakePayment = () => {
 
   return (
     <>
-      <ThemeProvider theme={appBarTheme}>
-        <AppBar position='absolute' color="appbarColor">
-          <Toolbar>
-            <img src={logo2} alt="logo" className='nav-logo' />
-            <Typography varient="h1" component='div' fontWeight={800} sx={{ flexGrow: 2, fontSize: 20, fontFamily: 'Montserrat' }} > </Typography>
-            <Stack direction='row' spacing={1}>
-            <img src={logo1} alt="mckvlogo2" height={50} width={300}/>
-            </Stack>
-          </Toolbar>
-        </AppBar>
-      </ThemeProvider>
+      <AppBar></AppBar>
 
       <Paper elevation={4} style={paperStyle} boxshadow={"5px 5px 5px "} border={1}>
         <Grid className='stud-info'>
 
           <Typography variant="h5" gutterBottom marginBottom={1} marginTop={4}> Application for Payment</Typography>
-          <ColoredLine />
+          <ColoredLine/>
 
 
           <Stack direction={'row'} spacing={2} marginTop={3} >
