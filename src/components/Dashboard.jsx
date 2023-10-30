@@ -1,10 +1,7 @@
 import React from 'react';
 import {  Grid, Paper, Typography, Button, AppBar, Toolbar } from '@mui/material';
 import Navbar from './Navbar';
-import { useNavigate } from "react-router-dom";
-import Stack from '@mui/joy/Stack';
 import logo1 from '../images/mckvlogo.png';
-import logo2 from '../images/cnlogo.png';
 
 const Dashboard = () => {
   const paperStyle = { padding: 20, height: '440px', width: "750px", margin: "120px auto", borderRadius: 10 }

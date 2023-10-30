@@ -20,6 +20,11 @@ const Navbar = () => {
     const navigateToLogin = () => {
         navigate("/login");
     }
+
+    const navigate2 = useNavigate();
+    const navigateToEnrollment = () => {
+        navigate2("/enrollment");
+    }
     return (
         <ThemeProvider theme={theme}>
             <AppBar position='absolute' color="appbarColor">
@@ -32,6 +37,7 @@ const Navbar = () => {
                         <Button color='inherit' sx={{ fontFamily: 'Catamaran', fontSize: 17 }}> Student Profile</Button>
                         <Button color='inherit' sx={{ fontFamily: 'Catamaran', fontSize: 17 }}> Search</Button>
                         <Button onClick={navigateToLogin} color='inherit' sx={{ fontFamily: 'Catamaran', fontSize: 17 }}> Make Payment</Button>
+                        <Button onClick={navigateToEnrollment} color='inherit' sx={{ fontFamily: 'Catamaran', fontSize: 17 }}>Enrollment</Button>
                     </Stack>
                 </Toolbar>
             </AppBar>
