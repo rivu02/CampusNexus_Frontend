@@ -16,7 +16,6 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
 
-
 const ColoredLine = () => (
   <div sx={{ marginTop: "10px", marginBottom: "10px" }}>
     <hr style={{
@@ -227,7 +226,7 @@ const Enrollment = () => {
                       Back
                     </Button>
                     <Button sx={{ marginTop: '20px' }} variant="contained" color="primary" onClick={handleNext}>
-                      {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                      {activeStep === steps.length - 1 ? '' : 'Next'}
                     </Button>
                   </div>
                 </div>
