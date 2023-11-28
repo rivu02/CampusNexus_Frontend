@@ -226,6 +226,7 @@ const Enrollment = () => {
                       Back
                     </Button>
                     <Button sx={{ marginTop: '20px' }} variant="contained" color="primary" onClick={handleNext}>
+                    
                       {activeStep === steps.length - 1 ? '' : 'Next'}
                     </Button>
                   </div>
